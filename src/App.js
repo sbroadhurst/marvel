@@ -42,7 +42,7 @@ const BasicExample = () => (
           <Link to="/">Heroes</Link>
         </li>
         <li>
-          <Link to="/books">Books</Link>
+          <Link to="/recent-comics">Recent Comics</Link>
         </li>
         <li>
           <Link to="/topics">Topics</Link>
@@ -52,7 +52,7 @@ const BasicExample = () => (
       <hr />
 
       <Route exact path="/" component={Heroes} />
-      <Route path="/books" component={Books} />
+      <Route path="/recent-comics" component={Books} />
       <Route path="/topics" component={Topics} />
       <Route path="/hero-info" component={HeroInfo} />
     </div>
