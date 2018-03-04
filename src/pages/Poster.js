@@ -15,7 +15,7 @@ class Poster extends React.Component {
     let hero = this.props.info
 
     return (
-      <div className="hero-list" style={{ display: 'inline' }}>
+      <div className="hero-list" style={{ display: 'inline-block', padding: '10px', width: '100%vw' }}>
         <img
           style={{ width: '70px', height: '100px', margin: '5px' }}
           className="hero"
@@ -24,6 +24,7 @@ class Poster extends React.Component {
           src={hero.thumbnail}
           onClick={this.handleClick}
         />
+        {/* <p className='hero-name'> {hero.name} </p> */}
       </div>
     )
   }
