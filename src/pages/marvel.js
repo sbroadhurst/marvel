@@ -12,7 +12,7 @@ const marvel = [
   {
     id: 1009718,
     name: 'Wolverine',
-    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/2/60/537bcaef0f6cf.jpg'
+    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/2/60/537bcaef0f6cf.jpg',
   }
 ]
 
