@@ -1,6 +1,6 @@
 import React from 'react'
 import comics from './comics'
-import Poster from './Poster'
+import Poster from '../Poster'
 
 export default class Books extends React.Component {
   constructor(props) {

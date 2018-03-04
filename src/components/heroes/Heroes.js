@@ -1,6 +1,6 @@
 import React from 'react'
 import marvel from './marvel'
-import Poster from './Poster'
+import Poster from '../Poster'
 import { Redirect } from 'react-router'
 
 export default class Heroes extends React.Component {

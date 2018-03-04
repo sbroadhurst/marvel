@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import Heroes from './pages/Heroes'
-import Books from './pages/Books'
-import HeroInfo from './pages/HeroInfo'
+import Heroes from './components/heroes/Heroes'
+import Books from './components/literature/Books'
+import HeroInfo from './components/heroes/HeroInfo'
 
 const Topic = ({ match }) => (
   <div>

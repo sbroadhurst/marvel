@@ -36,10 +36,6 @@
     height: 290px;
   }
   
-  .aside-2 {
-    background: hotpink;
-  }
-  
   @media all and (min-width: 600px) {
     .aside { flex: 1 auto; }
   }
