@@ -13,6 +13,16 @@ const marvel = [
     id: 1009718,
     name: 'Wolverine',
     thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/2/60/537bcaef0f6cf.jpg',
+  },
+  {
+    id: 1009187,
+    name: 'Black Panther',
+    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/6/60/5261a80a67e7d.jpg',
+  },
+  {
+    id: 1009268,
+    name: 'Deadpool',
+    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99.jpg',
   }
 ]
 
