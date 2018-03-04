@@ -6,7 +6,7 @@ class ComicPreview extends React.Component {
     render() {
 
         let comic = this.props.info
-        console.log(comic)
+        // console.log(comic)
         return (
             <div style={{ display: 'inline-block', margin: '10px' }}>
                 <div>
