@@ -44,9 +44,9 @@ const marvel = [
     thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/d/50/50febb79985ee.jpg',
   },
   {
-    id: 1017300,
-    name: 'Dr. Strange',
-    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/6/f0/5239b5e7d7f70.jpg',
+    id: 1009515,
+    name: 'Punisher',
+    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/3/90/5261675f6b22f.jpg',
   }
 ]
 

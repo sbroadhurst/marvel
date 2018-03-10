@@ -1,5 +1,7 @@
 import React from 'react'
 import marvel from './marvel'
+import femaleMarvel from './femaleMarvel'
+import villiansMarvel from './villiansMarvel'
 import Poster from '../Poster'
 import { Redirect } from 'react-router'
 import '../Style.css'
@@ -25,32 +27,72 @@ export default class Heroes extends React.Component {
   }
   renderPreview() {
     return (
-      <div className="contain">
-
-        <h1>Popular Male Heroes</h1>
-
-
-        <div className="row">
-          <div className="row__inner">
-
-            <div className="tile">
-              <div className="tile__media">
-                {marvel.map((info, index) => {
-                  return (
-                    <Poster
-                      key={index}
-                      info={info}
-                      id={info.id}
-                      name={info.name}
-                      select={this.posterSelected}
-                    />
-                  )
-                })}
+      <div>
+        <div className="contain">
+          <h1>Popular Heroes</h1>
+          <div className="row">
+            <div className="row__inner">
+              <div className="tile">
+                <div className="tile__media">
+                  {marvel.map((info, index) => {
+                    return (
+                      <Poster
+                        key={index}
+                        info={info}
+                        id={info.id}
+                        name={info.name}
+                        select={this.posterSelected}
+                      />
+                    )
+                  })}
+                </div>
               </div>
-
             </div>
           </div>
-
+        </div>
+        <div className="contain">
+          <h1>Popular Heroines</h1>
+          <div className="row">
+            <div className="row__inner">
+              <div className="tile">
+                <div className="tile__media">
+                  {femaleMarvel.map((info, index) => {
+                    return (
+                      <Poster
+                        key={index}
+                        info={info}
+                        id={info.id}
+                        name={info.name}
+                        select={this.posterSelected}
+                      />
+                    )
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="contain">
+          <h1>Popular Villians</h1>
+          <div className="row">
+            <div className="row__inner">
+              <div className="tile">
+                <div className="tile__media">
+                  {villiansMarvel.map((info, index) => {
+                    return (
+                      <Poster
+                        key={index}
+                        info={info}
+                        id={info.id}
+                        name={info.name}
+                        select={this.posterSelected}
+                      />
+                    )
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
