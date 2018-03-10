@@ -15,7 +15,7 @@ class ComicMap extends React.Component {
                             info={info}
                             id={info.id}
                             name={info.name}
-                            select={this.posterSelected}
+                            onClick={this.posterSelected}
                         />
                     )
                 })}

@@ -23,6 +23,20 @@ const marvel = [
     id: 1009268,
     name: 'Deadpool',
     thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99.jpg',
+  },
+  {
+    id: 1009268,
+    name: 'Deadpool',
+    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99.jpg',
+  }, {
+    id: 1009268,
+    name: 'Deadpool',
+    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99.jpg',
+  },
+  {
+    id: 1009268,
+    name: 'Deadpool',
+    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99.jpg',
   }
 ]
 
