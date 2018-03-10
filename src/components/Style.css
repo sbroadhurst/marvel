@@ -47,7 +47,7 @@ a:hover {
 
 .row {
 	overflow: scroll;
-	width: 100vw;
+	width: 95vw;
 }
 
 .row__inner {

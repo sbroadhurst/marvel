@@ -25,18 +25,28 @@ const marvel = [
     thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99.jpg',
   },
   {
-    id: 1009268,
-    name: 'Deadpool',
-    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99.jpg',
+    id: 1009664,
+    name: 'Thor',
+    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/d/d0/5269657a74350.jpg',
   }, {
-    id: 1009268,
-    name: 'Deadpool',
-    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99.jpg',
+    id: 1009220,
+    name: 'Captain America',
+    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087.jpg',
   },
   {
-    id: 1009268,
-    name: 'Deadpool',
-    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99.jpg',
+    id: 1009351,
+    name: 'Hulk',
+    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0.jpg',
+  },
+  {
+    id: 1009262,
+    name: 'Daredevil',
+    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/d/50/50febb79985ee.jpg',
+  },
+  {
+    id: 1017300,
+    name: 'Dr. Strange',
+    thumbnail: 'http://i.annihil.us/u/prod/marvel/i/mg/6/f0/5239b5e7d7f70.jpg',
   }
 ]
 
