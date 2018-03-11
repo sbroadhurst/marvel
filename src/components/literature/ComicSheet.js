@@ -43,7 +43,7 @@ class ComicSheet extends React.Component {
 
                     </div>
                 </article>
-                <aside className="aside aside-1"><img src={comic.thumbnail.path + '.' + comic.thumbnail.extension} className='hero-image' alt='The comic selected' /></aside>
+                <aside className="aside aside-1"><img src={comic.thumbnail.path + '.' + comic.thumbnail.extension} className='comic-image' alt='The comic selected' /></aside>
                 <footer className="footer"> Footer Text <br /></footer>
             </div>
         )

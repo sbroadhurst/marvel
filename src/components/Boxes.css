@@ -11,7 +11,7 @@
   }
   
   .header {
-    background: tomato;
+    /* background: tomato; */
     height: 50px;
     font-size: 2em;
   }
@@ -23,7 +23,7 @@
   
   .main {
     text-align: left;
-    background: deepskyblue;
+    /* background: deepskyblue; */
   }
   
   .aside-1 {
@@ -33,6 +33,11 @@
 
   .hero-image{
     width: 290px;
+    height: 290px;
+  }
+
+  .comic-image{
+    width: 220px;
     height: 290px;
   }
 
