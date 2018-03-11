@@ -11,10 +11,12 @@ class ComicPreview extends React.Component {
         return (
             <div style={{ display: 'inline-block', margin: '10px' }}>
                 <div>
-                    <Link to={'/comic-info/' + comic.id} id={comic.id}> =<img src={comic.thumbnail.path + '.' + comic.thumbnail.extension}
+                    <Link to={{
+                        pathname: '/comic-info/' + comic.id, state: { id: comic.id }
+                    }}> <img src={comic.thumbnail.path + '.' + comic.thumbnail.extension}
                         style={{ width: '10vw', float: 'left' }}
                         alt={comic.title} title={comic.title}
-                    /></Link>
+                        /></Link>
                 </div>
             </div>
         )

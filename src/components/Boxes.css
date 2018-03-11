@@ -35,6 +35,10 @@
     width: 290px;
     height: 290px;
   }
+
+  .info{
+    float: left;
+  }
   
   @media all and (min-width: 600px) {
     .aside { flex: 1 auto; }

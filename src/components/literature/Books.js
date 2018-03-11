@@ -10,13 +10,6 @@ export default class Books extends React.Component {
     this.state = {
       comicData: null
     }
-
-    this.posterSelected = this.posterSelected.bind(this)
-  }
-
-  posterSelected(data) {
-    let id = data
-    console.log(id)
   }
 
   componentWillMount() {

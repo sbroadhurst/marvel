@@ -5,7 +5,7 @@ class ComicMap extends React.Component {
 
     renderPreview() {
         let recentComics = this.props.comicData.data.results
-        console.log(recentComics)
+        // console.log(recentComics)
         return (
             <div>
                 {recentComics.map((info, index) => {
