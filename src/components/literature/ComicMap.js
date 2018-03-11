@@ -3,6 +3,10 @@ import ComicPreview from './ComicPreview'
 
 class ComicMap extends React.Component {
 
+    posterSelected(id) {
+        console.log(id)
+    }
+
     renderPreview() {
         let recentComics = this.props.comicData.data.results
         console.log(recentComics)
@@ -15,7 +19,7 @@ class ComicMap extends React.Component {
                             info={info}
                             id={info.id}
                             name={info.name}
-                            onClick={this.posterSelected}
+                            select={this.posterSelected}
                         />
                     )
                 })}

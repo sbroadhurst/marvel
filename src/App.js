@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 import Heroes from './components/heroes/Heroes'
 import Books from './components/literature/Books'
 import HeroInfo from './components/heroes/HeroInfo'
+import ComicInfo from './components/literature/ComicInfo'
 
 const Topic = ({ match }) => (
   <div>
@@ -55,6 +56,7 @@ const BasicExample = () => (
       <Route path="/recent-comics" component={Books} />
       <Route path="/topics" component={Topics} />
       <Route path="/hero-info" component={HeroInfo} />
+      <Route path="/comic-info" component={ComicInfo} />
     </div>
   </Router>
 )
