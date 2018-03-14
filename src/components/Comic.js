@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 class Comic extends React.Component {
 
@@ -8,10 +9,13 @@ class Comic extends React.Component {
         let comic = this.props.info
         return (
             <div style={{ display: 'inline-block', margin: '10px' }} >
-                <img src={comic.images[0].path + '.' + comic.images[0].extension}
-                    alt={comic.title}
-                    title={comic.title}
-                    style={{ height: '100px' }} />
+                <Link to={{
+                    pathname: '/comic-info/' + comic.id, state: { id: comic.id }
+                }}>
+                    <img src={comic.images[0].path + '.' + comic.images[0].extension}
+                        alt={comic.title}
+                        title={comic.title}
+                        style={{ height: '100px' }} /> </Link>
             </div>
         )
     }
