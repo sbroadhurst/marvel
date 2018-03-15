@@ -5,6 +5,7 @@ import villiansMarvel from './villiansMarvel'
 import Poster from '../Poster'
 import { Redirect } from 'react-router'
 import '../Style.css'
+import { Link } from 'react-router-dom'
 
 export default class Heroes extends React.Component {
   constructor(props) {
@@ -51,7 +52,7 @@ export default class Heroes extends React.Component {
           </div>
         </div>
         <div className="contain">
-          <h1>Popular Heroines</h1>
+          <h1> Popular Heroines</h1>
           <div className="row">
             <div className="row__inner">
               <div className="tile">
@@ -113,7 +114,7 @@ export default class Heroes extends React.Component {
 
     return (
       <div>
-        <h2>Heroes</h2>
+        <h2><Link to='/hero-grid' >Heroes</Link></h2>
         {this.renderPreview()}
       </div>
     )

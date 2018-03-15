@@ -1,9 +1,10 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { HashRouter as Router, Route, Link } from 'react-router-dom'
 import Heroes from './components/heroes/Heroes'
 import Books from './components/literature/Books'
 import HeroInfo from './components/heroes/HeroInfo'
 import ComicInfo from './components/literature/ComicInfo'
+import HeroGrid from './components/heroes/HeroGrid'
 
 const Topic = ({ match }) => (
   <div>
@@ -38,16 +39,16 @@ const Topics = ({ match }) => (
 const BasicExample = () => (
   <Router>
     <div>
-      <ul>
+      <ul style={{ display: 'flex', flexDirection: 'row', listStyleType: 'none' }}>
         <li>
           <Link to="/">Heroes</Link>
         </li>
-        <li>
+        <li style={{ marginLeft: '60px' }}>
           <Link to="/recent-comics">Recent Comics</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/topics">Topics</Link>
-        </li>
+        </li> */}
       </ul>
 
       <hr />
@@ -57,6 +58,7 @@ const BasicExample = () => (
       <Route path="/topics" component={Topics} />
       <Route path="/hero-info" component={HeroInfo} />
       <Route path="/comic-info" component={ComicInfo} />
+      <Route path='/hero-grid' component={HeroGrid} />
     </div>
   </Router>
 )
