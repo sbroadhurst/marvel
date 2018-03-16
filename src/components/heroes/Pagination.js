@@ -28,16 +28,14 @@ class Pagination extends React.Component {
     render() {
         const { todos, currentPage, todosPerPage } = this.state;
         console.log(this.props)
-        // Logic for displaying current todos
+        //  displaying current todos
         const indexOfLastTodo = currentPage * todosPerPage;
         const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
         const currentTodos = todos.slice(indexOfFirstTodo, indexOfLastTodo);
         console.log(currentTodos)
-        const renderTodos = currentTodos.map((todo, index) => {
-            return <GridSheet key={index} info={currentTodos} />;
-        })
+        const renderTodos = <GridSheet info={currentTodos} />;
 
-        // Logic for displaying page numbers
+        //  displaying page numbers
         const pageNumbers = [];
         for (let i = 1; i <= Math.ceil(todos.length / todosPerPage); i++) {
             pageNumbers.push(i);

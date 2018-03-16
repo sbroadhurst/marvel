@@ -4,7 +4,7 @@ class Grid extends React.Component {
 
     render() {
         let hero = this.props.info
-        console.log(hero)
+        // console.log(hero)
         return (
             <div style={{ display: 'inline-block', padding: '5px' }} >
                 <img
