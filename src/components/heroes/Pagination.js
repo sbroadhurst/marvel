@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Boxes.css'
+import GridSheet from './GridSheet'
 
 class Pagination extends React.Component {
     constructor() {
@@ -19,21 +20,21 @@ class Pagination extends React.Component {
     }
 
     componentWillMount() {
-        this.setState({ todos: this.props.todos.data.results })
+        this.setState({ todos: this.props.todos })
     }
 
 
 
     render() {
         const { todos, currentPage, todosPerPage } = this.state;
-        console.log(this.props.todos.data.results)
+        console.log(this.props)
         // Logic for displaying current todos
         const indexOfLastTodo = currentPage * todosPerPage;
         const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
         const currentTodos = todos.slice(indexOfFirstTodo, indexOfLastTodo);
-
+        console.log(currentTodos)
         const renderTodos = currentTodos.map((todo, index) => {
-            return <li key={index}>{todo}</li>;
+            return <GridSheet key={index} info={currentTodos} />;
         })
 
         // Logic for displaying page numbers

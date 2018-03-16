@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Boxes.css'
-//import Pagination from './Pagination'
+import Pagination from './Pagination'
+
 var crypto = require('crypto')
 var PRIV_KEY = '2563a9d397a9b07a35e00eba1ac5849e21a8197f'
 var API_KEY = 'c80eaba5b4bd858c1a4fc978b7792878'
@@ -11,13 +12,6 @@ class HeroGrid extends React.Component {
         this.state = {
             todos: null
         }
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    handleClick(event) {
-        this.setState({
-            currentPage: Number(event.target.id)
-        });
     }
 
     componentWillMount() {
@@ -42,23 +36,20 @@ class HeroGrid extends React.Component {
                 return payload.json()
             })
             .then(function (json) {
-                //   console.log(json)
-                self.setState({ todos: json })
+                console.log(json.data.results)
+                self.setState({ todos: json.data.results })
             })
     }
 
 
     render() {
-        // const { todos } = this.state
-        // if (todos != null)
-        return (
-            <div>
-                hey
-                    {/* <Pagination todos={todos} /> */}
-            </div>
-
-        )
-        // else return null
+        const { todos } = this.state
+        // console.log(todos.data.results)
+        if (todos != null && todos !== undefined)
+            return (
+                <Pagination todos={todos} />
+            )
+        else return null
     }
 }
 
