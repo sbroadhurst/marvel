@@ -10,18 +10,33 @@ class HeroGrid extends React.Component {
     constructor() {
         super();
         this.state = {
-            todos: null
+            todos: null,
+            offset: 0
         }
+        //this.setOffset = this.setOffset.bind(this)
+
+    }
+
+    setOffset = (page) => {
+        console.log(this)
+        console.log(page)
+        let newOffset = (page - 1) * 100
+        console.log(newOffset)
+        this.setState({ offset: newOffset })
+        console.log(this.state.offset)
+        this.fetchTodos(newOffset)
     }
 
     componentWillMount() {
-        this.fetchTodos()
+        this.fetchTodos(0)
     }
 
-    fetchTodos() {
+    fetchTodos(offset) {
         let self = this
+        //        let offset = this.state.offset
+        console.log(offset)
         let url =
-            'https://gateway.marvel.com:443/v1/public/characters?orderBy=name&apikey=' +
+            'https://gateway.marvel.com:443/v1/public/characters?orderBy=name&limit=100&offset=' + offset + '&apikey=' +
             API_KEY
         var ts = new Date().getTime()
         var hash = crypto
@@ -36,7 +51,8 @@ class HeroGrid extends React.Component {
                 return payload.json()
             })
             .then(function (json) {
-                console.log(json.data.results)
+                console.log(json)
+                // console.log(json.data.results)
                 self.setState({ todos: json.data.results })
             })
     }
@@ -45,9 +61,11 @@ class HeroGrid extends React.Component {
     render() {
         const { todos } = this.state
         // console.log(todos.data.results)
-        if (todos != null && todos !== undefined)
+        if (todos != null)
             return (
-                <Pagination todos={todos} />
+                <div>
+                    <Pagination todos={todos} select={this.setOffset} />
+                </div>
             )
         else return null
     }
