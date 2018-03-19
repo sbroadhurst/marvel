@@ -29,10 +29,10 @@ class Pagination extends React.Component {
 
 
     render() {
-        console.log(this.props.todos)
-        const { currentPage, todosPerPage } = this.state;
+        // console.log(this.props.todos)
+        // const { currentPage, todosPerPage } = this.state;
         const { todos } = this.props
-        console.log(todos)
+        // console.log(todos)
         // const indexOfLastTodo = currentPage * todosPerPage;
         // const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
         // const currentTodos = todos.slice(indexOfFirstTodo, indexOfLastTodo);

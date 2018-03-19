@@ -1,4 +1,7 @@
 import React from 'react';
+import './Style.css'
+import { Link } from 'react-router-dom'
+
 
 class Header extends React.Component {
     render() {
@@ -6,10 +9,10 @@ class Header extends React.Component {
             <div>
                 <ul style={{ display: 'flex', flexDirection: 'row', listStyleType: 'none' }}>
                     <li>
-                        Heroes
+                        <Link to="/">Heroes</Link>
                     </li>
                     <li style={{ marginLeft: '60px' }}>
-                        Recent Comics
+                        <Link to="/recent-comics">Recent Comics</Link>
                     </li>
                     {/* <li>
         <Link to="/topics">Topics</Link>
