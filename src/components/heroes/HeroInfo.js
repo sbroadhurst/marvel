@@ -77,8 +77,8 @@ export default class HeroInfo extends React.Component {
 
   render() {
     const { heroData, comicData } = this.state
-    // console.log(heroData)
-    //  console.log(comicData)
+    console.log(heroData)
+    console.log(comicData)
     if (heroData != null && comicData != null)
       return (
         <div>

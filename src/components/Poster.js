@@ -1,5 +1,5 @@
 import React from 'react'
-import './Style.css'
+
 
 class Poster extends React.Component {
   constructor(props) {
@@ -16,9 +16,11 @@ class Poster extends React.Component {
     let hero = this.props.info
     //console.log(hero)
     return (
-      <div style={{ display: 'inline-block', padding: '5px' }} >
+      <div >
         <img
           className="tile__img"
+          width='250px'
+          height=" 150px"
           alt={hero.name}
           title={hero.name}
           src={hero.thumbnail}

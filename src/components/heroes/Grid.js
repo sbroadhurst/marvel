@@ -8,7 +8,8 @@ class Grid extends React.Component {
         return (
             <div style={{ display: 'inline-block', padding: '5px' }} >
                 <img
-                    className="tile__img"
+                    width='250px'
+                    height='250px'
                     alt={hero.name}
                     title={hero.name}
                     src={hero.thumbnail.path + "." + hero.thumbnail.extension}

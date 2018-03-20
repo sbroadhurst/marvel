@@ -14,7 +14,7 @@ class GridSheet extends React.Component {
                             key={index}
                             info={info}
                             id={info.id}
-                        /*  select={this.posterSelected} */
+                            select={this.posterSelected}
                         />
                     )
                 })}

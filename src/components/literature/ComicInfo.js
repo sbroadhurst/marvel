@@ -19,7 +19,7 @@ export default class ComicInfo extends React.Component {
 
     retrieveData() {
         let self = this
-        console.log(this.props.location.state.id)
+        //console.log(this.props.location.state.id)
         //console.log(this.state.comicData)
         let id = this.props.location.state.id
         let url =
