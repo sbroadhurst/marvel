@@ -4,7 +4,7 @@ import femaleMarvel from './femaleMarvel'
 import villiansMarvel from './villiansMarvel'
 import Poster from '../Poster'
 import { Redirect } from 'react-router'
-
+import '../Style.css'
 import { Link } from 'react-router-dom'
 import Carousel from 'nuka-carousel';
 
