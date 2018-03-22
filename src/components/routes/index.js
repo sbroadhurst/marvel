@@ -17,7 +17,7 @@ export default class Routes extends Component {
                         <Route exact path="/" component={Heroes} />
                         <Route path="/recent-comics" component={Books} />
                         <Route path="/hero-info/:id" component={HeroInfo} />
-                        <Route path="/comic-info" component={ComicInfo} />
+                        <Route path="/comic-info/:id" component={ComicInfo} />
                         <Route path='/hero-grid' component={HeroGrid} />
                     </Switch>
                 </div>

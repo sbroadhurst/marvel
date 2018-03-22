@@ -18,10 +18,11 @@ export default class ComicInfo extends React.Component {
     }
 
     retrieveData() {
+        console.log(this.props)
         let self = this
         //console.log(this.props.location.state.id)
         //console.log(this.state.comicData)
-        let id = this.props.location.state.id
+        let id = this.props.match.params.id
         let url =
             'https://gateway.marvel.com:443/v1/public/comics/' +
             id +
