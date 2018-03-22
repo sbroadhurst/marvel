@@ -21,9 +21,7 @@ export default class HeroInfo extends React.Component {
 
   retrieveData() {
     let self = this
-    // console.log(this.props.location.state)
-    //  console.log(this.state.heroData)
-    let id = this.props.location.state.identity
+    let id = this.props.match.params.id
     let url =
       'https://gateway.marvel.com:443/v1/public/characters/' +
       id +
@@ -49,9 +47,7 @@ export default class HeroInfo extends React.Component {
 
   retrieveComics() {
     let self = this
-    // console.log(this.props.location.state)
-    //  console.log(this.state.heroData)
-    let id = this.props.location.state.identity
+    let id = this.props.match.params.id
     let url =
       'https://gateway.marvel.com:443/v1/public/characters/' +
       id + '/comics?startYear=2018&orderBy=-onsaleDate&limit=5&apikey='

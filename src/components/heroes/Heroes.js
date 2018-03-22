@@ -3,30 +3,12 @@ import marvel from './marvel'
 import femaleMarvel from './femaleMarvel'
 import villiansMarvel from './villiansMarvel'
 import Poster from '../Poster'
-import { Redirect } from 'react-router'
 import '../Style.css'
 import { Link } from 'react-router-dom'
 import Carousel from 'nuka-carousel';
 
 export default class Heroes extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      redirect: false,
-      id: null,
-      name: null
-    }
 
-    this.posterSelected = this.posterSelected.bind(this)
-  }
-
-  posterSelected(data, whom) {
-    this.setState({ redirect: true })
-    let identity = data
-    let who = whom
-    this.setState({ id: identity, name: who })
-    console.log(identity)
-  }
   renderPreview() {
     return (
       <div className>
@@ -78,17 +60,6 @@ export default class Heroes extends React.Component {
   }
 
   render() {
-    const { redirect } = this.state
-    if (redirect)
-      return (
-        <Redirect
-          to={{
-            pathname: '/hero-info/' + this.state.name,
-            state: { identity: this.state.id }
-          }}
-        />
-      )
-
     return (
       <div>
         <h2><Link to='/hero-grid' >Heroes</Link></h2>
