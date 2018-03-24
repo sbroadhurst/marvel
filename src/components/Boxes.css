@@ -19,6 +19,7 @@
   .footer {
    /* background: lightgreen; */
     height: 300px;
+    color: red
   }
   
   .main {
@@ -43,6 +44,7 @@
 
   .info{
     float: left;
+    color: green
   }
   
   @media all and (min-width: 600px) {
@@ -63,7 +65,7 @@
   html, body {
     margin: 0;
     font-family: 'Roboto', Arial, sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
   }
   
   #page-numbers {

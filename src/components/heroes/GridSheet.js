@@ -7,15 +7,17 @@ class GridSheet extends React.Component {
         let comics = this.props.info
         // console.log(comics)
         return (
-            <div>
+            <div style={{ overflow: 'scroll', height: '400px' }}>
                 {comics.map((info, index) => {
                     return (
+
                         <Grid
                             key={index}
                             info={info}
                             id={info.id}
                             select={this.posterSelected}
                         />
+
                     )
                 })}
             </div>

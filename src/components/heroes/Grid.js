@@ -9,8 +9,9 @@ class Grid extends React.Component {
         return (
             <Link to={{ pathname: 'hero-info/' + hero.id }}><div style={{ display: 'inline-block', padding: '5px' }} >
                 <img
-                    width='250px'
-                    height='250px'
+                    className='tile__img'
+                    width='100px'
+                    height='100px'
                     alt={hero.name}
                     title={hero.name}
                     src={hero.thumbnail.path + "." + hero.thumbnail.extension}

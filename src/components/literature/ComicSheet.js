@@ -31,7 +31,7 @@ class ComicSheet extends React.Component {
     checkLink() {
         const comic = this.props.comicData.data.results[0]
         if (!comic.urls[1]) return null
-        else return <a href={comic.urls[1].url}> Official Marvel Purchase Link </a>
+        else return <a href={comic.urls[1].url} target="_blank"> Official Marvel Purchase Link </a>
     }
 
     render() {
@@ -44,14 +44,14 @@ class ComicSheet extends React.Component {
                 <article className="main">
                     <div className='body'>
                         {comic.description} <br /><br />
-                        <p className='info'>{comic.prices[0].type}: $ {comic.prices[0].price}<br />
-                            {comic.dates[0].type}:  {this.timeConverter(comic.dates[0].date)} </p>
+                        <p className='info'>Sale Price: $ {comic.prices[0].price}<br />
+                            On Sale Date:  {this.timeConverter(comic.dates[0].date)} </p>
 
                     </div>
                 </article>
                 <aside className="aside aside-1"><img src={comic.thumbnail.path + '.' + comic.thumbnail.extension} className='comic-image' alt='The comic selected' /></aside>
                 <footer className="footer"> Important Link(s)<br />
-                    <a href={comic.urls[0].url}> Official Marvel Website Link </a><br />
+                    <a href={comic.urls[0].url} target="_blank"> Official Marvel Website Link </a><br />
                     <div>{this.checkLink()}</div>
                 </footer>
             </div>

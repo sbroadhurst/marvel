@@ -13,7 +13,7 @@ export default class Heroes extends React.Component {
     return (
       <div className>
         <h1>Popular Heroes</h1>
-        <Carousel slidesToShow={1} slideWidth={'250px'} renderBottomCenterControls={false}
+        <Carousel slidesToShow={1} slideWidth={'210px'} renderBottomCenterControls={false}
         >
           {marvel.map((info, index) => {
             return (
@@ -27,7 +27,7 @@ export default class Heroes extends React.Component {
           })}
         </Carousel>
         <h1>Popular Heroines</h1>
-        <Carousel slidesToShow={1} slideWidth={'250px'} renderBottomCenterControls={false}
+        <Carousel slidesToShow={1} slideWidth={'210px'} renderBottomCenterControls={false}
         >
           {femaleMarvel.map((info, index) => {
             return (
@@ -41,7 +41,7 @@ export default class Heroes extends React.Component {
           })}
         </Carousel>
         <h1>Popular Villians</h1>
-        <Carousel slidesToShow={1} slideWidth={'250px'} renderBottomCenterControls={false}
+        <Carousel slidesToShow={1} slideWidth={'210px'} renderBottomCenterControls={false}
         >
           {villiansMarvel.map((info, index) => {
             return (

@@ -12,7 +12,7 @@ class Poster extends React.Component {
         <Link to={{ pathname: 'hero-info/' + hero.id }} >
           <img
             className="tile__img"
-            width='250px'
+            width='200px'
             height=" 150px"
             alt={hero.name}
             title={hero.name}
