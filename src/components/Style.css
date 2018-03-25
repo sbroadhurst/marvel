@@ -16,9 +16,15 @@ a:visited {
 	text-decoration: none;
 }
 
+
+.tile__img{
+	transition: all .3s ease-in-out;
+	z-index: 1;
+}
+
 .tile__img:hover{
 	transform: scale(1.5);
-
+	z-index: 3;
 }
 
 
