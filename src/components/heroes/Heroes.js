@@ -11,9 +11,9 @@ export default class Heroes extends React.Component {
 
   renderPreview() {
     return (
-      <div className>
+      <div>
         <h1>Popular Heroes</h1>
-        <Carousel slidesToShow={1} slideWidth={'210px'} renderBottomCenterControls={false}
+        <Carousel slidesToShow={1} slideWidth={'210px'} renderBottomCenterControls={false} frameOverflow='show'
         >
           {marvel.map((info, index) => {
             return (
@@ -27,7 +27,7 @@ export default class Heroes extends React.Component {
           })}
         </Carousel>
         <h1>Popular Heroines</h1>
-        <Carousel slidesToShow={1} slideWidth={'210px'} renderBottomCenterControls={false}
+        <Carousel slidesToShow={1} slideWidth={'210px'} renderBottomCenterControls={false} frameOverflow='show'
         >
           {femaleMarvel.map((info, index) => {
             return (
@@ -41,7 +41,7 @@ export default class Heroes extends React.Component {
           })}
         </Carousel>
         <h1>Popular Villians</h1>
-        <Carousel slidesToShow={1} slideWidth={'210px'} renderBottomCenterControls={false}
+        <Carousel slidesToShow={1} slideWidth={'210px'} renderBottomCenterControls={false} frameOverflow='show'
         >
           {villiansMarvel.map((info, index) => {
             return (
